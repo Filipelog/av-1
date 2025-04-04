@@ -1,0 +1,97 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #d3c093;
+}
+
+/*cabeçalho/parte superior, arrumar navegação e falta direcionamento dos menus*/
+
+#cabecalho{
+    background-color:#cbb788 ;
+    padding: 10px;
+}
+.logo{
+    align-items: center;
+    text-align: center;
+    font-size: 45px;
+}
+
+.logo a img {
+    float: left; 
+    padding: 20px;
+   position: relative;
+   bottom: 120px;
+}
+
+#navegacao{
+    padding-top: 40px;
+  
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    margin-right: 200px;
+    /* background-color: red; */
+}
+#navegacao a {
+    padding: 8px 12px;
+}
+#navegacao a:link,
+a:visited {
+    color: #000000;
+}
+
+#navegacao a:hover {
+    color: #e24edb;
+    background: #a19169;
+    border-radius: 15%;
+}
+
+#log{
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+#log a{
+    padding: 5px 5px ;
+}    
+/* fim cabeçalho */
+
+/*inicio dos produtos, falta adição de produtos, parte de atalho/tabela lateral*/
+#catalogo{
+    /* background-color: red; */
+    height: 400px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.produto{
+    margin: 80px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+    background: #f9f9f9;
+    font-size: 17px;
+}
+
+.produto a img{
+    border-radius: 3%;
+}
+
+.produto a:hover {
+    color: #f18842;
+    background: #d3c093;
+    border-radius: 20%;
+}
+
+#lateral{
+    background-color: red;
+    
+}
