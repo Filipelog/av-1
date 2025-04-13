@@ -12,7 +12,7 @@ header {
 #cabecalho {
     background-color: #cbb788;
     padding: 10px;
-   
+
 }
 
 .logo {
@@ -75,7 +75,7 @@ a:visited {
 
 /*inicio dos produtos, falta adição de produtos, parte de atalho/tabela lateral*/
 
-#catalogo{
+#catalogo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,29 +90,59 @@ a:visited {
     justify-content: center;
 
 }
+
 #catalogo section h4 {
     display: flex;
     font-size: 20px;
     justify-content: center;
-    
+
 
 }
 
-.produto {
-background-color: aqua;
-display: flex;
-flex-direction: row;
-gap: 1vw;
+.produtos {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
 }
 
-.produto a img {
-    
+.produtos a img {
+
     width: 500px;
 }
 
-.produto a:hover {
+.produtos a:hover {
     color: #f18842;
     background: #d3c093;
-   
+
 }
 
+.produto .informacoes-produto {
+    background-color: #c5c5c5;
+    position: relative;
+    bottom: 3.4em;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 15px;
+}
+
+.produtos .produto:hover .informacoes-produto {
+    opacity: 0.7;
+    background-color: #c5c5c5;
+}
+
+
+.enfase h1 a {
+    padding: 8px 12px;
+}
+
+.enfase h1 a:link,
+a:visited {
+    color: #000000;
+}
+
+.enfase h1 a:hover {
+    color: #000000;
+    text-decoration: underline;
+    transition: 350ms;
+}
