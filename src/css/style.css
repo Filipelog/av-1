@@ -1,88 +1,89 @@
-body{
+body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #d3c093;
 }
 
-/*cabeçalho/parte superior, arrumar navegação e falta direcionamento dos menus*/
+header {
+    max-height: 100%;
 
-#cabecalho{
-    background-color:#cbb788 ;
+}
+
+
+#cabecalho {
+    background-color: #cbb788;
+    padding: 10px;
+   
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo .texto {
+    font-size: 45px;
+    width: 50%;
     padding: 10px;
 }
-.logo{
-    align-items: center;
-    text-align: center;
-    font-size: 45px;
-}
 
-.logo a img {
-    float: left; 
+.logo .img {
     padding: 20px;
-   position: relative;
-   bottom: 120px;
+    position: relative;
+    bottom: 3em;
 }
 
-#navegacao{
-    padding-top: 40px;
-  
-    cursor: pointer;
+#navegacao {
+    justify-content: center;
+    position: relative;
+    bottom: 2vw;
+    padding-top: 3%;
     text-align: center;
-    align-items: center;
-    font-size: 20px;
-    margin-right: 200px;
-    /* background-color: red; */
+    font-size: 21px;
 }
+
 #navegacao a {
     padding: 8px 12px;
 }
+
 #navegacao a:link,
 a:visited {
     color: #000000;
 }
 
 #navegacao a:hover {
-    color: #e24edb;
-    background: #a19169;
-    border-radius: 15%;
+    color: #8d19b1;
+    text-decoration: underline;
+    transition: 350ms;
 }
 
-#log{
-        display: flex;
-        justify-content: flex-end;
-        padding: 15px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        right: 0;
-    }
-#log a{
-    padding: 5px 5px ;
-}    
+#log {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+#log a {
+    padding: 5px 5px;
+}
+
 /* fim cabeçalho */
 
 /*inicio dos produtos, falta adição de produtos, parte de atalho/tabela lateral*/
-#catalogo{
-    /* background-color: red; */
-    height: 400px;
-    margin-left: 200px;
-    margin-right: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+
+
+.produto {
+background-color: aqua;
+grid-area: 1;
 }
 
-.produto{
-    margin: 80px;
-    width: 200px;
-    border-radius: 5px;
-    text-align: center;
-    background: #f9f9f9;
-    font-size: 17px;
-}
-
-.produto a img{
+.produto a img {
     border-radius: 3%;
+    width: 100px;
 }
 
 .produto a:hover {
@@ -91,7 +92,14 @@ a:visited {
     border-radius: 20%;
 }
 
-#lateral{
+.lateral-1 {
     background-color: red;
-    
+    grid-area: 2;
+    height: 200px;
+}
+
+.lateral-2{
+    background-color: #8d19b1;
+    height: 200px;
+    grid-area: 3;
 }
