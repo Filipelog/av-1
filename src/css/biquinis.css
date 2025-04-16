@@ -106,7 +106,6 @@ section {
 .filtros {
     display: grid;
     gap: 8px;
-
 }
 
 #campo-pesquisa {
@@ -154,7 +153,7 @@ section {
 
 #coleçao {
     /* background-color: red; */
-
+    width: 88em;
     padding: 60px;
     display: grid;
     grid-template-columns: auto auto auto;

@@ -118,7 +118,7 @@ a:visited {
 }
 
 .produto .informacoes-produto {
-    background-color: #c5c5c5;
+    background-color: #bdb6b6;
     position: relative;
     bottom: 3.4em;
     opacity: 0;
@@ -128,7 +128,7 @@ a:visited {
 
 .produtos .produto:hover .informacoes-produto {
     opacity: 0.7;
-    background-color: #c5c5c5;
+    background-color: #e2dede;
 }
 
 
