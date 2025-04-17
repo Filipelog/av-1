@@ -86,6 +86,7 @@ a:visited {
 
 /*inicio dos produtos*/
 section {
+
     display: grid;
     grid-template-columns: auto auto;
     background-color: #d3c093;
@@ -104,6 +105,7 @@ section {
 }
 
 .filtros {
+    width: 195px;
     display: grid;
     gap: 8px;
 }
@@ -153,10 +155,10 @@ section {
 
 #coleçao {
     /* background-color: red; */
-    width: 88em;
+    width: 69vw;
     padding: 60px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
     column-gap: 50px;
 
@@ -171,8 +173,11 @@ section {
 
 }
 
-.peças a img {
+
+.peças img {
+
     border-radius: 3%;
+
 }
 
 .peças a:hover {
@@ -181,5 +186,33 @@ section {
     border-radius: 20%;
 
 }
+
+/* responsividade */
+
+@media (max-width: 768px) {
+
+    #barra-lateral {
+        width: 220px;
+        padding: 20px;
+    }
+
+
+    #campo-pesquisa {
+        width: 7em;
+
+    }
+
+
+    #coleçao {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+}
+
+/* ainda falta o restante... */
+
+
+
 
 /* rodapé */
