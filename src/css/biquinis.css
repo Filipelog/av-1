@@ -182,7 +182,6 @@ section {
 
 .peças a:hover {
     color: #f18842;
-    background: #d3c093;
     border-radius: 20%;
 
 }
@@ -216,3 +215,17 @@ section {
 
 
 /* rodapé */
+
+
+/* cor de mudança */
+
+body.dark section {
+    background: #292c35;
+  }
+  body.dark .peças {
+     background: #292c35;
+  }
+
+  body.dark #barra-lateral {
+    background-color: #272b36;
+  }

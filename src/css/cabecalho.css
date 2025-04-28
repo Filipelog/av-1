@@ -71,65 +71,6 @@ a:visited {
     padding: 5px 5px;
 }
 
-/* fim cabeçalho */
-
-/*inicio dos produtos, falta adição de produtos, parte de atalho/tabela lateral*/
-
-#catalogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5em;
-
-}
-
-#catalogo section h1 {
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
-
-}
-
-#catalogo section h4 {
-    display: flex;
-    font-size: 20px;
-    justify-content: center;
-
-
-}
-
-.produtos {
-    /* background-color: aqua; */
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-}
-
-.produtos a img {
-
-    width: 500px;
-}
-
-.produtos a:hover {
-    color: #f18842;
-    background: #d3c093;
-
-}
-
-.produto .informacoes-produto {
-    background-color: #adacac;
-    position: relative;
-    bottom: 3.4em;
-    opacity: 0;
-    transition: 0.3s;
-    padding: 15px;
-}
-
-.produtos .produto:hover .informacoes-produto {
-    opacity: 0.7;
-    background-color: #a1a1a1;
-}
 
 
 .enfase h1 a {

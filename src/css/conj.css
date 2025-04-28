@@ -75,7 +75,7 @@ a:visited {
 
 /* CATÁLOGO - LAYOUT ESTILO INSTAGRAM */
 #conjuntos {
-    max-width: 935px;
+    max-width: 500px;
     margin: 30px auto;
     padding: 0 20px;
 }
@@ -150,3 +150,15 @@ a:visited {
         justify-content: center;
     }
 }
+
+
+main img{
+    width: 450px;
+}
+
+body.dark p {
+    color: #fff;
+  }
+  body.dark h1 {
+    color: #fff;
+  }
