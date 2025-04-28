@@ -186,3 +186,19 @@
         width: 60px;
        
     }
+
+    section{
+      color: black;
+  }
+  
+  body.dark section {
+      color: #fff;
+    }
+  
+    body.dark .biquini {
+      background-color: black;
+    }
+  
+    body.dark .h1m {
+      color: #fff;
+    }
