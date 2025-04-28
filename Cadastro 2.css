@@ -1,0 +1,431 @@
+body{
+    background-color: black;
+}
+h1{
+    font-size: 48px;
+    color: black;
+    padding: 10px 0;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+div{
+    color: whitesmoke;
+}
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+    font-family: Arial,sans-serif;
+  }
+  
+  body{
+    margin:10px;
+  }
+  a{
+    text-decoration: none;
+  }
+  a.links{
+    display: none;
+  }
+  .content{
+    width: 100px;
+    margin: 0px auto;
+    position: relative; 
+    }
+    h1:after{
+        content: ' ';
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin-top: 10px;
+        background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+        background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+      }
+      p{
+        margin-bottom:15px;
+      }
+      p:first-child{
+        margin: 0px;
+      }
+      label{
+        color: whitesmoke;
+        position: relative;
+      }
+      ::-webkit-input-placeholder  {
+        color: #bebcbc; 
+        font-style: italic;
+      }
+      input:-moz-placeholder,
+      textarea:-moz-placeholder{
+        color: #bebcbc;
+        font-style: italic;
+      } 
+      input {
+        outline: none;
+      }
+      input:not([type="checkbox"]){
+        width: 95%;
+        margin-top: 4px;
+        padding: 10px;  
+        border: 1px solid #b2b2b2;
+        
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        
+        -webkit-box-shadow: 0px 1px 2px 0px rgba(168, 168, 168, 0.6) inset;
+        box-shadow: 0px 1px 2px 0px rgba(168, 168, 168, 0.6) inset;
+        
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+      }
+      input[type="submit"]{
+        width: 100%!important;
+        cursor: pointer;  
+        background: whitesmoke;
+        padding: 8px 5px;
+        color: black;
+        font-size: 20px;  
+        border: 1px solid #fff; 
+        margin-bottom: 10px;  
+        text-shadow: 0 1px 1px #333;
+        
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        
+        transition: all 0.2s linear;
+      }
+      input[type="submit"]:hover{
+        background: goldenrod;
+      }
+      .link{
+        position: relative;
+        background: #e1eaeb;
+        color: #7f7c7c;
+        left: 720px;
+        height: 20px;
+        width: 440px;
+        padding: 17px 30px 20px 30px;
+        font-size: 16px;
+        text-align: right;
+        border-top: 1px solid #dbe5e8;
+      
+        -webkit-border-radius: 0 0  5px 5px;
+        border-radius: 0 0  5px 5px;
+      }
+      .link a {
+        font-weight: bold;
+        background: #f7f8f1;
+        padding: 6px;
+        color: wheat;
+        margin-left: 10px;
+        border: 1px solid #cbd518;
+        margin: 50px;
+      
+        -webkit-border-radius: 4px;
+        border-radius: 4px;  
+      
+        -webkit-transition: all 0.4s linear;
+        transition: all 0.4s  linear;
+      }
+      .link a:hover {
+        color: goldenrod;
+        background: #f7f7f7;
+        border: 1px solid black;
+      }
+      #cadastro, 
+#login{
+  position: absolute;
+  top: 0px;
+  width: 88%; 
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: rgb(247, 247, 247);
+  border: 1px solid rgba(147, 184, 189,0.8);
+  
+  
+  border-radius: 5px;
+  
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+@-webkit-keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(-20px);
+    }
+  }
+  
+  @keyframes fadeOutLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+  }
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #d3c093;
+}
+
+header {
+    max-height: 100%;
+
+}
+
+
+#cabecalho {
+    background-color: #cbb788;
+    padding: 10px;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo .texto {
+    font-size: 45px;
+    width: 50%;
+    padding: 10px;
+}
+
+.logo .img {
+    padding: 20px;
+    position: relative;
+    bottom: 3em;
+}
+
+#navegacao {
+    justify-content: center;
+    position: relative;
+    bottom: 2vw;
+    padding-top: 3%;
+    text-align: center;
+    font-size: 21px;
+}
+
+#navegacao a {
+    padding: 8px 12px;
+}
+
+#navegacao a:link,
+a:visited {
+    color: #000000;
+}
+
+#navegacao a:hover {
+    color: #8d19b1;
+    text-decoration: underline;
+    transition: 350ms;
+}
+
+#log {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+#log a {
+    padding: 5px 5px;
+}
+
+/* fim cabeçalho */
+
+/*inicio dos produtos, falta adição de produtos, parte de atalho/tabela lateral*/
+
+#catalogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+
+}
+
+#catalogo section h1 {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+
+}
+
+#catalogo section h4 {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+
+
+}
+
+.produtos {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.produtos a img {
+
+    width: 500px;
+}
+
+.produtos a:hover {
+    color: #f18842;
+    background: #d3c093;
+
+}
+
+.produto .informacoes-produto {
+    background-color: #adacac;
+    position: relative;
+    bottom: 3.4em;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 15px;
+}
+
+.produtos .produto:hover .informacoes-produto {
+    opacity: 0.7;
+    background-color: #a1a1a1;
+}
+
+
+.enfase h1 a {
+    padding: 8px 12px;
+}
+
+.enfase h1 a:link,
+a:visited {
+    color: #000000;
+}
+
+.enfase h1 a:hover {
+    color: #000000;
+    text-decoration: underline;
+    transition: 350ms;
+}
+
+
+/* tema claro e escuro */
+
+html{
+    color-scheme: light dark;
+}
+
+body.dark {
+    background: #292c35;
+  }
+
+body.dark a {
+    color: #fff;
+  }
+
+body.dark #catalogo .enfase a:hover {
+    color: #8d19b1;
+  }
+
+body.dark #cabecalho {
+    background-color: #272b36;
+  }
+
+.tema{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .mudanca {
+    background-color: #babbb8;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  
+  }
+
+  .mudanca img{
+    width: 17px;
+  }
+  
+  
+  .mudanca .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .mudanca .ball {
+    transform: translateX(24px);
+  }
+  

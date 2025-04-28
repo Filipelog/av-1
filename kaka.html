@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login JS</title>
+
+   <link rel="stylesheet" href="login.css">
+
+</head>
+<body class="darkmode">
+    
+  <div class="content">
+    <div id="Login">
+    <form>
+
+        <h3>Login</h3>
+        <input type="text" placeholder="Login" id="login">
+        <input type="password" placeholder="Senha" id="senha">
+        <input type="submit" onclick="logar(); return false">
+
+    </form>
+    <p class="link">
+      Ainda não tem conta?
+      <a href="cadastro.html">Cadastrar-se</a>
+    </p>
+<button id="muda cor">
+    <img src="dark.png" alt="">
+</button>
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+                alert('Sucesso');
+                location.href = "Biquinis.html  ";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+        
+
+    </script>
+
+</body>
+</html>
