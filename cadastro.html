@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<link rel="stylesheet" href="Cadastro 2.css">
+<body>
+    <div id="cadastro">
+        <form action="" method="post">
+          <h1>Cadastro</h1>
+        </form>
+     
+      <p>
+        <label for="nome">Nome</label>
+        <input type="text" name="Nome" id="Nome" placeholder="nome" required>
+      </p>
+      <p>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+      </p>
+      <p>
+        <label for="senha">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Senha" max="8" required>
+      </p>
+      <p>
+        <a href="Trabalho.html"><input type="submit" name="submit" id="submit" value="Cadastrar">
+      </p></a>
+      <p class="link">
+        Ja tem conta?
+        <a href="kaka.html">Ir Para Login</a>
+      </p>
+
+<script>
+
+localStorage.setItem('userId', data.user.id);s
+
+
+import CryptoJS from 'crypto-js';
+
+const secretKey = 'sua-chave-secreta';
+
+
+const encryptedUser  = CryptoJS.AES.encrypt(JSON.stringify(data.user), secretKey).toString();
+localStorage.setItem('user', encryptedUser );
+
+
+const decryptedUser  = CryptoJS.AES.decrypt(localStorage.getItem('user') || '', secretKey);
+const user = JSON.parse(decryptedUser .toString(CryptoJS.enc.Utf8));
+</script>
+
+
+
+
+    </body>
+</html> </div>
